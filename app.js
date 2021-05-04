@@ -25,9 +25,12 @@ vertex.configureApp(app, config)
 
 // import routes
 const main = require('./routes/main')
+const index = require('./routes/index')
 
 // set routes
 app.use('/rumah-kopi', main)
+app.use('/', index)
+
 
 
 module.exports = app
